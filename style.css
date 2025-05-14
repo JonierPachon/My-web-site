@@ -172,6 +172,9 @@ section {
   width: 400px;
   margin: auto 0;
 }
+.section__pic-container img {
+  border-radius: 50%;
+}
 
 .section__text {
   align-self: center;
@@ -312,6 +315,10 @@ section {
   margin: auto 0;
 }
 
+.text-container {
+  text-align: justify;
+}
+
 /* EXPERIENCE SECTION */
 #experience {
   position: relative;
@@ -332,11 +339,11 @@ section {
 
 .article-container {
   display: flex;
-  text-align: initial;
   flex-wrap: wrap;
-  flex-direction: row;
   gap: 2.5rem;
-  justify-content: space-around;
+  justify-content: center;
+  /* text-align: initial; */
+  /* flex-direction: row; */
 }
 
 article {
@@ -361,10 +368,20 @@ article .icon {
   background-color: rgb(250, 250, 250);
 }
 
+/* To enhance the image of the projects...start */
+.adjust-content {
+  display: flex;
+  flex-direction: column;
+}
+.fit-content {
+  height: 100%;
+}
+/* To enhance the image of the projects...end */
+
 .project-img {
   border-radius: 2rem;
   width: 90%;
-  height: 90%;
+  height: 100%;
 }
 
 .project-title {
