@@ -94,7 +94,6 @@ a:hover {
 
 .menu-links {
   position: absolute;
-  /* 100% absolute takes the whole screen height so the menu is below the bottom of the screen */
   top: 100%;
   right: 0;
   background-color: white;
@@ -127,21 +126,6 @@ a:hover {
 .hamburger-icon.open span:nth-child(2) {
   opacity: 0;
 }
-/* change this to see the X */
-/* .hamburger-icon.open span:last-child {
-  transform: rotate(-45deg) translate(10px, -5px);
-} */
-
-.hamburger-icon span:first-child {
-  transform: none;
-}
-.hamburger-icon span:nth-child(2) {
-  opacity: 1;
-}
-
-.hamburger-icon span:last-child {
-  transform: none;
-}
 
 /* SECTIONS */
 section {
@@ -149,16 +133,13 @@ section {
   padding-top: 4vh;
   height: 96vh;
   margin: 0 10rem;
+  /* This simplifies calculations */
   box-sizing: border-box;
   min-height: fit-content;
 }
 
-/* I didn't find this */
-.section-container {
-  display: flex;
-}
-
 /* PROFILE SECTION */
+
 #profile {
   display: flex;
   justify-content: center;
@@ -185,7 +166,8 @@ section {
   font-weight: 600;
 }
 
-.section__text__p1 {
+.title {
+  font-size: 3rem;
   text-align: center;
 }
 
@@ -194,22 +176,11 @@ section {
   margin-bottom: 1rem;
 }
 
-.title {
-  font-size: 3rem;
-  text-align: center;
-}
-
 #socials-container {
   display: flex;
   justify-content: center;
   margin-top: 1rem;
   gap: 1rem;
-}
-
-/* ICONS */
-.icon {
-  cursor: pointer;
-  height: 2rem;
 }
 
 /* BUTTONS */
@@ -228,14 +199,13 @@ section {
   border-radius: 2rem;
 }
 
+.btn:hover {
+  cursor: pointer;
+}
+
 .btn-color-1,
 .btn-color-2 {
   border: rgb(53, 53, 53) 0.1rem solid;
-}
-
-.btn-color-1:hover,
-.btn-color-2:hover {
-  cursor: pointer;
 }
 
 .btn-color-1:hover,
@@ -252,12 +222,10 @@ section {
   background: none;
 }
 
-.btn-color-1:hover {
-  border: rgb(255, 255, 255) 0.1rem solid;
-}
-
-.btn-container {
-  gap: 1rem;
+/* ICONS */
+.icon {
+  cursor: pointer;
+  height: 2rem;
 }
 
 /* ABOUT SECTION */
@@ -266,15 +234,30 @@ section {
   position: relative;
 }
 
-.about-containers {
-  gap: 2rem;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
+.section-container {
+  display: flex;
+  gap: 4rem;
+  height: 80%;
+}
+
+.section__pic-container {
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+}
+
+.section__text__p1 {
+  text-align: center;
 }
 
 .about-details-container {
   justify-content: center;
   flex-direction: column;
+}
+
+.about-containers {
+  gap: 2rem;
+  margin: 2rem 0;
 }
 
 .about-containers,
@@ -290,7 +273,6 @@ section {
   position: absolute;
   /* from the right corner */
   right: -5rem;
-  /* From the bottom to the top */
   bottom: 1.5rem;
 }
 
@@ -304,17 +286,6 @@ section {
   text-align: center;
 }
 
-.section-container {
-  gap: 4rem;
-  height: 80%;
-}
-
-.section__pic-container {
-  height: 400px;
-  width: 400px;
-  margin: auto 0;
-}
-
 .text-container {
   text-align: justify;
 }
@@ -324,6 +295,13 @@ section {
   position: relative;
 }
 
+/* This class operates within the project section */
+.experience-details-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
 .experience-sub-title {
   color: rgb(85, 85, 85);
   font-weight: 600;
@@ -331,19 +309,11 @@ section {
   margin-bottom: 2rem;
 }
 
-.experience-details-container {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
 .article-container {
   display: flex;
   flex-wrap: wrap;
   gap: 2.5rem;
   justify-content: center;
-  /* text-align: initial; */
-  /* flex-direction: row; */
 }
 
 article {
@@ -381,17 +351,11 @@ article .icon {
 .project-img {
   border-radius: 2rem;
   width: 90%;
-  height: 100%;
 }
 
 .project-title {
   margin: 1rem;
   color: black;
-}
-
-.project-btn {
-  color: black;
-  border-color: rgb(163, 163, 163);
 }
 
 /* CONTACT */
@@ -406,9 +370,8 @@ article .icon {
   display: flex;
   justify-content: center;
   border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
-  background: (250, 250, 250);
+  border: rgb(163, 163, 163) 0.1rem solid;
+  background: rgb(250, 250, 250);
   margin: 2rem auto;
   padding: 0.5rem;
 }
