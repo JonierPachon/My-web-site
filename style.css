@@ -8,11 +8,20 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  /* position: relative; */
 }
 
 html {
   /* To navigate between different pages or sections smoothly */
   scroll-behavior: smooth;
+}
+
+#desktop-nav {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: white;
+  height: 12vh;
 }
 
 p {
@@ -40,7 +49,7 @@ nav {
 .nav-links {
   gap: 2rem;
   list-style: none;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 a {
@@ -58,7 +67,7 @@ a:hover {
 }
 
 .logo {
-  font-size: 2rem;
+  font-size: 1rem;
 }
 
 .logo:hover {
@@ -269,13 +278,15 @@ section {
   border-radius: 2rem;
 }
 
-.arrow {
-  position: absolute;
-  /* from the right corner */
-  right: -5rem;
-  bottom: 1.5rem;
-}
-
+/*.arrow {
+  /* position: absolute; */
+/* from the right corner */
+/* right: -5rem;
+  bottom: 1.5rem; */
+/* right: 0;
+  bottom: 0; */
+/*}
+*/
 .details-container {
   padding: 1.5rem;
   flex: 1;
@@ -288,7 +299,7 @@ section {
 
 .details-container:hover {
   /* transform: translateY(-5px); */
-  box-shadow: 0 0 5px rgba(197, 4, 245, 0.3);
+  box-shadow: 0 0 5px rgba(233, 118, 3, 0.389);
 }
 .text-container {
   text-align: justify;
