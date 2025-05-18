@@ -1,409 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jonier's Bio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-  </head>
-  <body>
-    <nav id="desktop-nav">
-      <div class="logo">Jonier Pachon</div>
-      <div>
-        <ul class="nav-links">
-          <!-- #: links -->
-          <!-- each of these are links and anchors but also they are sections  -->
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <!-- <nav id="hamburger-nav">
-      <div class="logo">Jonier Pachon</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li>
-            <a href="#about" onclick="toggleMenu()">About</a>
-          </li>
-          <li>
-            <a href="#experience" onclick="toggleMenu()">Experience</a>
-          </li>
-          <li>
-            <a href="#projects" onclick="toggleMenu()">Projects</a>
-          </li>
-          <li>
-            <a href="#contact" onclick="toggleMenu()">Contact</a>
-          </li>
-        </div>
-      </div>
-    </nav> -->
-    <!--  -->
-    <section id="profile">
-      <div class="section__pic-container">
-        <img
-          src="./assets/profile-pic4.png"
-          alt="Jonier Pachon Profile Picture"
-        />
-      </div>
-      <div class="section__text">
-        <p>Hello, I'm</p>
-        <h1 class="title">Jonier Pachon</h1>
-        <p class="section__text__p2">Frontend Developer</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-1"
-            onclick="window.open('./assets/resume.pdf')"
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-2" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
-        </div>
-        <div id="socials-container">
-          <!-- Open a new tab -->
-          <a
-            href="https://www.linkedin.com/in/jonierpachon-8211841ba/"
-            target="_blank"
-          >
-            <img
-              src="./assets/linkedin.png"
-              alt="My LinkedIn Profile"
-              class="icon"
-            />
-          </a>
-          <a href="https://github.com/jonierpachon" target="_blank">
-            <img
-              src="./assets/github.png"
-              alt="My Github Profile"
-              class="icon"
-            />
-          </a>
-        </div>
-      </div>
-    </section>
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/about-pic1.png"
-            alt="Profile Picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience Icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>
-                Personal Projects <br />
-                Frontend Development <br />
-                (HTML, CSS, JavaScript)
-              </p>
-            </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education Icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <!-- <p>B.Sc Bachelors Degree <br />M.Sc. Maters Degree</p></p> -->
-              <p>
-                Self-taught Web Developer <br />
-                (documentation, tutorials, and project-based practice)
-              </p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>
-              I'm a front-end web developer in progress, passionate about
-              turning ideas into clean, interactive experiences using HTML, CSS,
-              and JavaScript. I learn by building—whether it’s a random joke
-              generator or personalizing a portfolio—and I take pride in the
-              details that bring projects to life. Each step forward is part of
-              my journey to grow, improve, and create with purpose.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
-      <!-- <div class="experience-details-container"> -->
-      <div class="about-containers">
-        <div class="details-container">
-          <h2 class="experience-sub-title">Frontend Development</h2>
-          <div class="article-container">
-            <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience Icon"
-                class="icon"
-              />
-              <div>
-                <h3>HTML5</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience Icon"
-                class="icon"
-              />
-              <div>
-                <h3>CSS3</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience Icon"
-                class="icon"
-              />
-              <div>
-                <h3>Vanilla JavaScript</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience Icon"
-                class="icon"
-              />
-              <div>
-                <h3>Git</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience Icon"
-                class="icon"
-              />
-              <div>
-                <h3>Github</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience Icon"
-                class="icon"
-              />
-              <div>
-                <h3>Responsive Design</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience Icon"
-                class="icon"
-              />
-              <div>
-                <h3>VSCode</h3>
-                <p>Experienced</p>
-              </div>
-            </article>
-          </div>
-        </div>
-        <!-- <div class="details-container">
-               <h2 class="experience-sub-title">Frontend Development</h2>
-               <div class="article-container">
-                  <article>
-                     <img src="./assets/checkmark.png" alt="Experience Icon" class="icon">
-                     <div>
-                        <h3>PostgreSQL</h3>
-                        <p>Basic</p>
-                     </div>
-                  </article>
-                  <article>
-                     <img src="./assets/checkmark.png" alt="Experience Icon" class="icon">
-                     <div>
-                        <h3>Node Js</h3>
-                        <p>Intermediate</p>
-                     </div>
-                  </article>
-                  <article>
-                     <img src="./assets/checkmark.png" alt="Experience Icon" class="icon">
-                     <div>
-                        <h3>Express Js</h3>
-                        <p>Intermediate</p>
-                     </div>
-                  </article>
-                  <article>
-                     <img src="./assets/checkmark.png" alt="Experience Icon" class="icon">
-                     <div>
-                        <h3>Git</h3>
-                        <p>Intermediate</p>
-                     </div>
-                  </article>
-               </div>
-            </div> -->
-      </div>
-      <!-- </div> -->
-    </section>
-    <section id="projects">
-      <!-- <p class="section__text__p1">Browse My Recent</p> -->
-      <p class="section__text__p1">Navigate</p>
-      <h1 class="title">My Projects</h1>
-      <!-- experience-details-container -->
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container adjust-content">
-            <div class="article-container fit-content">
-              <img
-                src="./assets/Random-Joke-Generator.png"
-                alt="Project 1 Random Joke Generator"
-                class="project-img"
-              />
-            </div>
-
-            <div class="project-container">
-              <h2 class="experience-sub-title project-title">
-                Random Joke Generator
-              </h2>
-              <div class="btn-container">
-                <a
-                  href="https://github.com/JonierPachon/Random-Joke-Generator"
-                  target="_blank"
-                >
-                  <button class="btn btn-color-1 project-btn">Github</button>
-                </a>
-                <a
-                  href="https://bejewelled-tanuki-22670a.netlify.app/"
-                  target="_blank"
-                >
-                  <button class="btn btn-color-1 project-btn">Live Demo</button>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="details-container color-container adjust-content">
-            <div class="article-container fit-content">
-              <img
-                src="./assets/Snake.png"
-                alt="Project 2 snake game"
-                class="project-img"
-              />
-            </div>
-            <div class="project-container">
-              <h2 class="experience-sub-title project-title">Snake</h2>
-              <div class="btn-container">
-                <a href="https://github.com/JonierPachon/Snake" target="_blank">
-                  <button class="btn btn-color-1 project-btn">Github</button>
-                </a>
-                <a
-                  href="https://loquacious-peony-3bf3a0.netlify.app/"
-                  target="_blank"
-                >
-                  <button class="btn btn-color-1 project-btn">Live Demo</button>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="details-container color-container adjust-content">
-            <div class="article-container fit-content">
-              <img
-                src="./assets/third-project.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <div class="project-container">
-              <h2 class="experience-sub-title project-title">
-                Project Three <br />
-                Coming Soon...
-              </h2>
-              <div class="btn-container">
-                <a href="https://github.com/jonierpachon" target="_blank">
-                  <button class="btn btn-color-1 project-btn">Github</button>
-                </a>
-                <a href="https://github.com/jonierpachon" target="_blank">
-                  <button class="btn btn-color-1 project-btn">Live Demo</button>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact">
-      <p class="section__text__p1">Get In Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p>
-            <a href="mailto:examplemail@gmail.com"
-              >jhonier.pachon1015@gmail.com</a
-            >
-          </p>
-        </div>
-
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p>
-            <a
-              href="https://www.linkedin.com/in/jonierpachon-8211841ba/"
-              target="_blank"
-              >LinkedIn</a
-            >
-          </p>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <img
-        src="./assets/arrow-up.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#desktop-nav'"
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link
+         href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+         rel="stylesheet"
       />
-      <!-- <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
+      <link rel="stylesheet" href="style.css" />
+      <link rel="stylesheet" href="mediaqueries.css" />
+      <title>Jonier's Bio</title>
+   </head>
+   <body>
+      <header>
+         <a href="#home" class="logo">Jonier Pachon</a>
+         <!-- icon -->
+         <div class="bx bx-menu" id="menu-icon"></div>
+         <ul class="navbar">
+            <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#desktop-nav">Home</a></li>
-          </ul>
-        </div>
-      </nav> -->
-      <p>Copyright &#169; 2025 Jonier Pachon. All Rights Reserved</p>
-    </footer>
-    <script src="script.js"></script>
-  </body>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+         </ul>
+
+         <div class="top-btn">
+            <a href="#contact" class="nav-btn">Contact Me</a>
+         </div>
+      </header>
+      <!-- home section code -->
+      <section class="home" id="home">
+         <div class="home-content">
+            <h3>Hi, Myself</h3>
+            <h1>Jonier Pachon</h1>
+            <h3>I'm a <span class="multiple-text">Web Developer</span></h3>
+
+            <p>
+               I'm a front-end web developer in progress, passionate about
+               turning ideas into clean, interactive experiences using HTML,
+               CSS, and JavaScript. I learn by building—whether it’s a random
+               joke generator or personalizing a portfolio—and I take pride in
+               the details that bring projects to life. Each step forward is
+               part of my journey to grow, improve, and create with purpose.
+            </p>
+            <div class="social-media">
+               <a
+                  href="https://www.linkedin.com/in/jonierpachon-8211841ba/"
+                  target="_blank"
+                  ><i class="bx bxl-linkedin"></i
+               ></a>
+               <a href="https://github.com/jonierpachon" target="_blank"
+                  ><i class="bx bxl-github"></i
+               ></a>
+            </div>
+
+            <a href="#" class="btn" onclick="window.open('./assets/resume.pdf')"
+               >Download CV</a
+            >
+         </div>
+
+         <div class="home-img">
+            <img src="./assets/profile-pic4.png" alt="Profile Image" />
+         </div>
+      </section>
+
+      <!-- about section code -->
+      <section class="about" id="about">
+         <div class="about-img home-img">
+            <img src="./assets/about-pic-2.png" alt="Profile Image" />
+         </div>
+
+         <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>I am <span>web Developer</span></h3>
+            <p>
+               I'm a front-end web developer in progress, passionate about
+               turning ideas into clean, interactive experiences using HTML,
+               CSS, and JavaScript. I learn by building—whether it’s a random
+               joke generator or personalizing a portfolio—and I take pride in
+               the details that bring projects to life. Each step forward is
+               part of my journey to grow, improve, and create with purpose.
+            </p>
+            <a href="#" class="btn">Read More</a>
+         </div>
+      </section>
+
+      <!-- project section code -->
+      <section class="portfolio" id="portfolio">
+         <h2 class="heading">My <span>Portfolio</span></h2>
+         <div class="portfolio-content">
+            <div class="row">
+               <img
+                  src="./assets/random-joke-generator.png"
+                  alt="Random Joke Generator Image"
+               />
+               <div class="main-row">
+                  <div class="row-text">
+                     <h5>Random-Joke-Generator</h5>
+                  </div>
+                  <div class="row-icon">
+                     <i class="bx bxl-github"></i>
+                  </div>
+               </div>
+               <h4>Website Development</h4>
+            </div>
+
+            <div class="row">
+               <img src="./assets/Snake.png" alt="snake game Image" />
+               <div class="main-row">
+                  <div class="row-text">
+                     <h5>Snake</h5>
+                  </div>
+                  <div class="row-icon">
+                     <i class="bx bxl-github"></i>
+                  </div>
+               </div>
+               <h4>Website Development</h4>
+            </div>
+
+            <div class="row">
+               <img src="./assets/third-project.png" alt="snake game Image" />
+               <div class="main-row">
+                  <div class="row-text">
+                     <h5>Project 3 Coming soon...</h5>
+                  </div>
+                  <div class="row-icon">
+                     <i class="bx bxl-github"></i>
+                  </div>
+               </div>
+               <h4>Website Development</h4>
+            </div>
+         </div>
+      </section>
+
+      <!-- contact section code -->
+      <section class="contact" id="contact">
+         <h2 class="heading">Contact <span>Me</span></h2>
+
+         <form action="#">
+            <div class="input-box">
+               <input type="text" placeholder="Full Name" />
+               <input type="email" placeholder="Email Address" />
+            </div>
+            <div class="input-box">
+               <input type="number" placeholder="Phone Number" />
+               <input type="text" placeholder="Email Subject" />
+            </div>
+
+            <textarea
+               name="message"
+               id=""
+               cols="30"
+               rows="10"
+               placeholder="Your Message"
+            ></textarea>
+
+            <input type="submit" value="Send Message" class="btn" />
+         </form>
+      </section>
+
+      <!-- footer section code -->
+      <footer class="footer">
+         <div class="social">
+            <a
+               href="https://www.linkedin.com/in/jonierpachon-8211841ba/"
+               target="_blank"
+               ><i class="bx bxl-linkedin"></i
+            ></a>
+            <a href="https://github.com/jonierpachon" target="_blank"
+               ><i class="bx bxl-github"></i
+            ></a>
+         </div>
+
+         <p class="copyright">&copy; Jonier Pachon | All Rights Reserved</p>
+      </footer>
+      <script src="script.js"></script>
+   </body>
 </html>

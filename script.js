@@ -1,6 +1,12 @@
-// function toggleMenu() {
-//   const menu = document.querySelector(".menu-links");
-//   const icon = document.querySelector(".hamburger-icon");
-//   menu.classList.toggle("open");
-//   icon.classList.toggle("open");
-// }
+let menu = document.querySelector("#menu-icon");
+let navbar = document.querySelector(".navbar");
+
+menu.onclick = () => {
+   menu.classList.toggle("bx-x");
+   navbar.classList.toggle("active");
+};
+
+window.onscroll = () => {
+   menu.classList.remove("bx-x");
+   navbar.classList.remove("active");
+};

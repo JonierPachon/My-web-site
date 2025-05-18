@@ -1,115 +1,95 @@
-/* MEDIA QUERIES */
-/* When the screen size is 1200px or less , hide the desktop nav */
-@media screen and (max-width: 1400px) {
-  #profile {
-    height: 83vh;
-    margin-bottom: 6rem;
-  }
-  .about-containers {
-    flex-wrap: wrap;
-  }
+/* Responsive Design Code */
+
+@media (max-width: 1285px) {
+   html {
+      font-size: 55%;
+   }
 }
 
-@media screen and (max-width: 1200px) {
-  /* #desktop-nav {
-    display: none;
-  } */
-  #hamburger-nav {
-    display: flex;
-  }
-  #experience,
-  .experience-details-container {
-    margin-top: 2rem;
-  }
-  #profile,
-  .section-container {
-    display: block;
-  }
-  .arrow {
-    display: none;
-  }
+@media (max-width: 991px) {
+   header {
+      padding: 2rem 3%;
+   }
 
-  .section,
-  .section-container {
-    height: fit-content;
-  }
-  section {
-    margin: 0 5%;
-  }
-  .section__pic-container {
-    width: 275px;
-    height: 275px;
-    margin: 0 auto 2rem;
-  }
-  .about-containers {
-    margin-top: 0;
-  }
+   section {
+      padding: 10rem 3% 2rem;
+   }
+
+   .footer {
+      padding: 2rem 3%;
+   }
 }
 
-@media screen and (max-width: 600px) {
-  #contact,
-  footer {
-    height: 40vh;
-  }
-  #profile {
-    height: 83vh;
-    margin-bottom: 0;
-    /* What I would like to add */
-    /* margin-bottom: 30px; */
-  }
-  article {
-    font-size: 1rem;
-  }
-  /* footer, nav{
+@media (max-width: 786px) {
+   #menu-icon {
+      display: block;
+   }
+   .navbar {
+      position: absolute;
+      top: 100%;
+      right: -100%;
+      width: 255px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      background: var(--header-color);
+      transition: all 0.3s ease;
+      backdrop-filter: blur(10px);
+   }
+   .navbar a {
+      display: block;
+      padding: 17px;
+      font-size: 22px;
+   }
 
-} */
-  footer nav {
-    height: fit-content;
-    margin-bottom: 2rem;
-  }
+   .navbar.active {
+      right: 0;
+   }
 
-  .about-containers,
-  .contact-info-upper-container,
-  .btn-container {
-    flex-wrap: wrap;
-  }
-  .contact-info-container {
-    margin: 0;
-  }
+   .home {
+      flex-direction: column;
+   }
+   .home-content h3 {
+      font-size: 2.6rem;
+   }
 
-  .contact-info-container p,
-  .nav-links li a {
-    font-size: 1rem;
-  }
+   .home-content h1 {
+      font-size: 5rem;
+   }
 
-  .experience-sub-title {
-    font-size: 1.25rem;
-  }
+   .home-content {
+      order: 2;
+   }
 
-  .logo {
-    font-size: 1.5rem;
-  }
+   .home-img img {
+      width: 70vw;
+      margin-top: 4rem;
+   }
 
-  .nav-links {
-    flex-direction: column;
-    gap: 0.5rem;
-    text-align: center;
-  }
+   .about {
+      flex-direction: column;
+   }
 
-  .section__pic-container {
-    width: auto;
-    height: 46vw;
-    justify-content: center;
-  }
+   .contact form .input-box input {
+      width: 100%;
+   }
+}
 
-  .section__text__p2 {
-    font-size: 1.25rem;
-  }
-  .title {
-    font-size: 2rem;
-  }
+@media (max-width: 617px) {
+   .home-img img {
+      width: 80vw;
+      margin-top: 8rem;
+   }
 
-  .text-container {
-    text-align: justify;
-  }
+   .about-img img {
+      margin-top: 4rem;
+   }
+}
+
+@media (max-width: 426px) {
+   .heading {
+      font-size: 5rem;
+      text-align: center;
+      margin: 2rem 0;
+   }
 }
