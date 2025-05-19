@@ -3,6 +3,7 @@
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="swiper-bundle.min.css" />
       <link
          href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
          rel="stylesheet"
@@ -16,17 +17,18 @@
          <a href="#home" class="logo">Jonier Pachon</a>
          <!-- icon -->
          <div class="bx bx-menu" id="menu-icon"></div>
+
          <ul class="navbar">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#contact">Contact</a></li>
          </ul>
-
          <div class="top-btn">
             <a href="#contact" class="nav-btn">Contact Me</a>
          </div>
       </header>
+
       <!-- home section code -->
       <section class="home" id="home">
          <div class="home-content">
@@ -84,51 +86,123 @@
          </div>
       </section>
 
-      <!-- project section code -->
+      <!-- portfolio section code -->
       <section class="portfolio" id="portfolio">
          <h2 class="heading">My <span>Portfolio</span></h2>
-         <div class="portfolio-content">
-            <div class="row">
-               <img
-                  src="./assets/random-joke-generator.png"
-                  alt="Random Joke Generator Image"
-               />
-               <div class="main-row">
-                  <div class="row-text">
-                     <h5>Random-Joke-Generator</h5>
+         <div class="portfolio-content swiper">
+            <!--  -->
+            <div class="swiper-wrapper">
+               <div class="row swiper-slide">
+                  <img
+                     src="./assets/random-joke-generator.png"
+                     alt="Random Joke Generator Image"
+                  />
+                  <div class="main-row">
+                     <div class="row-text">
+                        <h5>Random-Joke-Generator</h5>
+                     </div>
                   </div>
-                  <div class="row-icon">
-                     <i class="bx bxl-github"></i>
+                  <p>
+                     I learn by building—whether it’s a random joke generator or
+                     personalizing a portfolio—and I take pride in the details
+                     that bring projects to life. Each step forward is part of
+                     my journey to grow, improve, and create with purpose.
+                  </p>
+                  <div class="buttons-row">
+                     <a
+                        class="button-row"
+                        target="_blank"
+                        href="https://bejewelled-tanuki-22670a.netlify.app/"
+                        >Demo<i class="bx bxs-right-arrow"></i
+                     ></a>
+
+                     <a
+                        class="button-row"
+                        href="https://github.com/JonierPachon/Random-Joke-Generator"
+                        target="_blank"
+                     >
+                        GitHub
+                        <i class="bx bxl-github"></i>
+                     </a>
                   </div>
                </div>
-               <h4>Website Development</h4>
+
+               <div class="row swiper-slide">
+                  <img src="./assets/snake.png" alt="Snake Game Image" />
+                  <div class="main-row">
+                     <div class="row-text">
+                        <h5>Snake</h5>
+                     </div>
+                  </div>
+                  <p>
+                     I learn by building—whether it’s a random joke generator or
+                     personalizing a portfolio—and I take pride in the details
+                     that bring projects to life.
+                  </p>
+                  <div class="buttons-row">
+                     <a
+                        class="button-row"
+                        target="_blank"
+                        href="https://loquacious-peony-3bf3a0.netlify.app/"
+                        >Demo<i class="bx bxs-right-arrow"></i
+                     ></a>
+
+                     <a
+                        class="button-row"
+                        href="https://github.com/JonierPachon/Random-Joke-Generator"
+                        target="_blank"
+                     >
+                        GitHub
+                        <i class="bx bxl-github"></i>
+                     </a>
+                  </div>
+               </div>
+               <div class="row swiper-slide">
+                  <img
+                     src="./assets/third-project.png"
+                     alt="Third Project Image"
+                  />
+                  <div class="main-row">
+                     <div class="row-text">
+                        <h5>Project 3 Coming soon..</h5>
+                     </div>
+                  </div>
+                  <p>
+                     I learn by building—whether it’s a random joke generator or
+                     personalizing a portfolio—and I take pride in the details
+                     that bring projects to life. Each step forward is part of
+                     my journey to grow, improve, and create with purpose.
+                  </p>
+                  <div class="buttons-row">
+                     <a
+                        class="button-row"
+                        target="_blank"
+                        href="https://bejewelled-tanuki-22670a.netlify.app/"
+                        >Demo<i class="bx bxs-right-arrow"></i
+                     ></a>
+
+                     <a
+                        class="button-row"
+                        href="https://github.com/JonierPachon/Random-Joke-Generator"
+                        target="_blank"
+                     >
+                        GitHub
+                        <i class="bx bxl-github"></i>
+                     </a>
+                  </div>
+               </div>
             </div>
 
-            <div class="row">
-               <img src="./assets/Snake.png" alt="snake game Image" />
-               <div class="main-row">
-                  <div class="row-text">
-                     <h5>Snake</h5>
-                  </div>
-                  <div class="row-icon">
-                     <i class="bx bxl-github"></i>
-                  </div>
-               </div>
-               <h4>Website Development</h4>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next">
+               <i class="bx bx-chevron-right swiper-portfolio-icon"></i>
+            </div>
+            <div class="swiper-button-prev">
+               <i class="bx bx-chevron-left swiper-portfolio-icon"></i>
             </div>
 
-            <div class="row">
-               <img src="./assets/third-project.png" alt="snake game Image" />
-               <div class="main-row">
-                  <div class="row-text">
-                     <h5>Project 3 Coming soon...</h5>
-                  </div>
-                  <div class="row-icon">
-                     <i class="bx bxl-github"></i>
-                  </div>
-               </div>
-               <h4>Website Development</h4>
-            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
          </div>
       </section>
 
@@ -173,6 +247,7 @@
 
          <p class="copyright">&copy; Jonier Pachon | All Rights Reserved</p>
       </footer>
+      <script src="swiper-bundle.min.js"></script>
       <script src="script.js"></script>
    </body>
 </html>
