@@ -18,6 +18,15 @@
    .footer {
       padding: 2rem 3%;
    }
+   .row {
+      padding: 20px 90px;
+   }
+}
+
+@media (max-width: 840px) {
+   .row {
+      padding: 20px 80px;
+   }
 }
 
 @media (max-width: 815px) {
@@ -28,15 +37,9 @@
    .home-content h1 {
       font-size: 5rem;
    }
-
-   /* .home-content {
-      order: 2;
-   } */
-
-   /* .home-img img {
-      width: 70vw;
-      margin-top: 4rem;
-   } */
+   .buttons-row {
+      justify-content: space-around;
+   }
 }
 
 @media (max-width: 786px) {
@@ -83,8 +86,48 @@
       flex-direction: column;
    }
 
+   .portfolio-content {
+      /* margin-left: 7rem;
+      margin-right: 7rem; */
+
+      margin: 4rem;
+   }
+   .row {
+      flex-direction: column;
+      gap: 20px;
+      padding: 40px 40px 50px;
+   }
+
+   .portfolio-text {
+      gap: 0;
+   }
+
+   .portfolio-text p {
+      padding: 0;
+      text-align: center;
+   }
+
+   .buttons-row {
+      justify-content: space-evenly;
+   }
+
    .contact form .input-box input {
       width: 100%;
+   }
+}
+
+@media (max-width: 630px) {
+   .portfolio-content {
+      margin-left: 2rem;
+      margin-right: 2rem;
+   }
+
+   .contact form .input-box {
+      flex-direction: column;
+   }
+
+   .contact form {
+      max-width: 58rem;
    }
 }
 
@@ -95,20 +138,58 @@
    }
 }
 
+@media (max-width: 540px) {
+   .row {
+      padding: 40px 20px;
+   }
+
+   .swiper-button-next {
+      right: -0.5rem;
+   }
+   .swiper-button-prev {
+      left: -0.5rem;
+   }
+}
+
 @media (max-width: 426px) {
+   html {
+      font-size: 50%;
+   }
    .heading {
       font-size: 5rem;
       text-align: center;
       margin: 2rem 0;
    }
+
+   .row {
+      padding: 30px 20px;
+   }
 }
 
 @media (max-width: 410px) {
-   html {
-      font-size: 50%;
-   }
-
    .navbar {
       width: 200px;
+   }
+   .row {
+      align-items: center;
+      padding: 15px 10px 30px;
+      margin: 0 10px;
+      gap: 8px;
+      justify-content: center;
+   }
+   .portfolio-text p {
+      height: fit-content;
+      padding: 0 15px;
+   }
+
+   .row img {
+      height: 300px;
+      width: auto;
+   }
+   .portfolio-content {
+      padding: 0;
+   }
+   .portfolio {
+      padding: 0;
    }
 }

@@ -259,6 +259,17 @@ span {
    font-size: 2.6rem;
 }
 
+/* .about-content h3 span {
+   background: var(--text-color-gradient);
+   background-clip: text;
+   -webkit-text-fill-color: transparent;
+} */
+.multiple-text {
+   background: var(--text-color-gradient);
+   background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+
 .about-content p {
    font-size: 1.6rem;
    margin: 2rem 0 3rem;
@@ -292,17 +303,38 @@ The thumb is the slider knob that you drag along the path. */
    justify-content: center;
    align-items: center;
    gap: 2.3rem;
+   border-radius: 28px;
+   border: 0.1px solid var(--main-color);
+   box-shadow: 0px 0px 3px var(--main-color);
    margin-top: 4.2rem;
    color: var(section-color2-text);
+   transition: all 0.5s ease;
 }
 
+.portfolio-content:hover {
+   box-shadow: 0px 0px 10px var(--main-color);
+}
 .row {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: 60px;
    background: var(--section-color2);
-   border-radius: 28px;
-   border: 1px solid transparent;
-   box-shadow: 0 0 5px var(--main-color);
-   padding: 20px;
-   transition: all 0.3s ease;
+   padding: 20px 100px;
+}
+
+.portfolio-text {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   gap: 2rem;
+}
+
+.portfolio-text p {
+   font-size: 1.6rem;
+   margin: 2rem 0 3rem;
+   justify-content: center;
 }
 
 .row img {
@@ -318,31 +350,11 @@ The thumb is the slider knob that you drag along the path. */
    margin-bottom: 1.4rem;
 }
 
-/* .main-row {
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-   margin-bottom: 0.5rem;
-} */
-
 .row h5 {
-   font-size: 20px;
+   font-size: 2.6rem;
    font-weight: 600;
    color: var(--section-color2-text);
 }
-
-/*.row i {
-   display: inline-flex;
-   align-items: center;
-   justify-content: center;
-   width: 55px;
-   height: 55px;
-   font-size: 27px;
-   border-radius: 50%;
-   background: var(--text-color-gradient);
-   color: var(--text-color-button);
-   transition: all 0.3s ease;
-} */
 
 .buttons-row {
    margin-top: 1rem;
@@ -363,6 +375,7 @@ The thumb is the slider knob that you drag along the path. */
    border-radius: 3rem;
    font-weight: 600;
    font-size: 1.6rem;
+   transition: all 0.3s ease;
 }
 
 .button-row i {
@@ -375,7 +388,6 @@ The thumb is the slider knob that you drag along the path. */
 }
 
 .button-row:hover {
-   transition: all 0.3s ease;
    box-shadow: 0 0 1.6rem var(--main-color);
    transform: translateY(-3px);
 }
@@ -392,10 +404,12 @@ The thumb is the slider knob that you drag along the path. */
 
 /* media queries */
 .swiper-button-next {
-   right: -0.5rem;
+   /* right: -0.5rem; */
+   right: 1rem;
 }
 .swiper-button-prev {
-   left: -0.5rem;
+   /* left: -0.5rem; */
+   left: 1rem;
 }
 
 .swiper-container-horizontal > .swiper-pagination-bullets {
@@ -418,12 +432,6 @@ The thumb is the slider knob that you drag along the path. */
    line-height: 1.4;
 }
 
-/* .row:hover {
-   border: 1px solid var(--main-color);
-   transform: translateY(-5px) scale(1.03);
-   cursor: pointer;
-} */
-
 /* Contact Section Code */
 
 .contact {
@@ -444,8 +452,6 @@ The thumb is the slider knob that you drag along the path. */
 
 .contact form .input-box {
    display: flex;
-   justify-content: center;
-   flex-wrap: wrap;
 }
 
 .contact form .input-box input,
@@ -466,6 +472,10 @@ The thumb is the slider knob that you drag along the path. */
    margin: 0.7rem 0.35rem;
 }
 
+.contact form .input-box-subject input {
+   width: 100%;
+}
+/*  */
 .contact form .btn {
    margin-top: 2rem;
    cursor: pointer;
