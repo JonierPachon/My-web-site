@@ -23,6 +23,12 @@
    }
 }
 
+@media (max-width: 872px) {
+   .br-active {
+      display: block;
+   }
+}
+
 @media (max-width: 840px) {
    .row {
       padding: 20px 80px;
@@ -43,6 +49,12 @@
 }
 
 @media (max-width: 786px) {
+   header {
+      position: fixed;
+   }
+   section {
+      padding-top: 12rem;
+   }
    #menu-icon {
       display: block;
    }
@@ -85,11 +97,11 @@
    .about {
       flex-direction: column;
    }
+   .br-active {
+      display: none;
+   }
 
    .portfolio-content {
-      /* margin-left: 7rem;
-      margin-right: 7rem; */
-
       margin: 4rem;
    }
    .row {
@@ -148,6 +160,12 @@
    }
    .swiper-button-prev {
       left: -0.5rem;
+   }
+}
+
+@media (max-width: 495px) {
+   .br-active {
+      display: block;
    }
 }
 

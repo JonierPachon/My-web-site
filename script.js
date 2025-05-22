@@ -8,8 +8,10 @@ menu.onclick = () => {
 };
 
 window.onscroll = () => {
-   menu.classList.remove("bx-x");
-   navbar.classList.remove("active");
+   if (navbar.classList.contains("active")) {
+      menu.classList.remove("bx-x");
+      navbar.classList.remove("active");
+   }
 };
 
 // ABOUT SECTION
@@ -22,8 +24,8 @@ const typed = new Typed(".multiple-text", {
       "Responsive Design.",
       "Git and GitHub.",
    ],
-   typeSpeed: 70,
-   backSpeed: 70,
+   typeSpeed: 80,
+   backSpeed: 80,
    backDelay: 1000,
    loop: true,
 });

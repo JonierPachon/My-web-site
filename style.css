@@ -35,6 +35,16 @@ html {
    overflow-x: hidden;
 }
 
+.code-style {
+   text-align: center;
+   font-family: monospace;
+   background: #00000017;
+   padding: 1px 6px 3px;
+   border-radius: 4px;
+   font-size: 90%;
+   color: var(--text-color);
+}
+
 body {
    /* position: relative; */
    background: var(--section-color1);
@@ -259,11 +269,10 @@ span {
    font-size: 2.6rem;
 }
 
-/* .about-content h3 span {
-   background: var(--text-color-gradient);
-   background-clip: text;
-   -webkit-text-fill-color: transparent;
-} */
+.br-active {
+   display: none;
+}
+
 .multiple-text {
    background: var(--text-color-gradient);
    background-clip: text;
