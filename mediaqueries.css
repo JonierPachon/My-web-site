@@ -122,6 +122,10 @@
       gap: 0;
    }
 
+   .portfolio-text h5 {
+      text-align: center;
+   }
+
    .portfolio-text p {
       padding: 0;
       text-align: center;
