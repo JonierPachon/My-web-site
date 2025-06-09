@@ -33,7 +33,6 @@ const typed = new Typed(".multiple-text", {
 // PORTFOLIO SWIPER
 
 let swiper = new Swiper(".portfolio-content", {
-   cssMode: true,
    loop: true,
    navigation: {
       nextEl: ".swiper-button-next",
@@ -43,7 +42,6 @@ let swiper = new Swiper(".portfolio-content", {
       el: ".swiper-pagination",
       clickable: true,
    },
-   mousewheel: true,
    keyboard: true,
 });
 

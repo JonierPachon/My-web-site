@@ -46,7 +46,6 @@ html {
 }
 
 body {
-   /* position: relative; */
    background: var(--section-color1);
    color: var(--text-color);
 }
@@ -307,11 +306,13 @@ The thumb is the slider knob that you drag along the path. */
 }
 
 .portfolio-content {
-   display: grid;
+   /* display: grid;
    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
    justify-content: center;
    align-items: center;
-   gap: 2.3rem;
+   gap: 2.3rem; */
+   display: flex;
+   overflow: hidden;
    border-radius: 28px;
    border: 0.1px solid var(--main-color);
    box-shadow: 0px 0px 3px var(--main-color);
@@ -325,6 +326,7 @@ The thumb is the slider knob that you drag along the path. */
 }
 .row {
    display: flex;
+   /* height: 100vh; */
    justify-content: space-between;
    align-items: center;
    gap: 60px;
@@ -347,13 +349,11 @@ The thumb is the slider knob that you drag along the path. */
 }
 
 .row img {
-   /* mine.... */
    display: block;
    margin: auto;
 
    height: 400px;
-   /* mine... */
-   /* height: auto; */
+
    max-width: 100%;
    border-radius: 28px;
    margin-bottom: 1.4rem;

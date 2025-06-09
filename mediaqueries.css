@@ -232,3 +232,31 @@
       padding: 0;
    }
 }
+
+@media (max-width: 410px) {
+   .portfolio-content {
+      /* height: fit-content; */
+   }
+   .row {
+      /* height: 100%; */
+      padding: 15px 10px 30px;
+      margin: 0;
+      gap: 8px;
+      justify-content: center;
+   }
+   .portfolio-text p {
+      height: fit-content;
+      padding: 0 15px;
+   }
+
+   .row img {
+      height: 300px;
+      width: auto;
+   }
+   .portfolio-content {
+      padding: 0;
+   }
+   .portfolio {
+      padding: 0;
+   }
+}
