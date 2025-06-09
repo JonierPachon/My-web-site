@@ -307,11 +307,8 @@ The thumb is the slider knob that you drag along the path. */
 }
 
 .portfolio-content {
-   display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(350px, auto));
-   justify-content: center;
-   align-items: center;
-   gap: 2.3rem;
+   display: flex;
+   overflow: hidden;
    border-radius: 28px;
    border: 0.1px solid var(--main-color);
    box-shadow: 0px 0px 3px var(--main-color);
