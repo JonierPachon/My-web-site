@@ -112,10 +112,21 @@
    .portfolio-content {
       margin: 4rem;
    }
+
+   /* .portfolio-text p {
+      height: 100%;
+   } */
    .row {
       flex-direction: column;
       gap: 20px;
       padding: 40px 40px 50px;
+      min-height: 100%;
+   }
+
+   .swiper-slide {
+      display: flex;
+      flex-direction: column;
+      height: auto !important;
    }
 
    .portfolio-text {
@@ -182,6 +193,9 @@
 }
 
 @media (max-width: 495px) {
+   html {
+      font-size: 50%;
+   }
    .br-active {
       display: block;
    }
@@ -191,9 +205,7 @@
    ::-webkit-scrollbar {
       width: 3.5vw;
    }
-   html {
-      font-size: 50%;
-   }
+
    .heading {
       font-size: 5rem;
       text-align: center;
@@ -234,29 +246,12 @@
 }
 
 @media (max-width: 410px) {
-   .portfolio-content {
-      /* height: fit-content; */
-   }
    .row {
-      /* height: 100%; */
-      padding: 15px 10px 30px;
       margin: 0;
-      gap: 8px;
-      justify-content: center;
+      gap: 15px;
    }
-   .portfolio-text p {
-      height: fit-content;
-      padding: 0 15px;
-   }
-
    .row img {
-      height: 300px;
-      width: auto;
-   }
-   .portfolio-content {
-      padding: 0;
-   }
-   .portfolio {
-      padding: 0;
+      margin: 0;
+      height: 400px;
    }
 }
