@@ -21,6 +21,7 @@ const typed = new Typed(".multiple-text", {
    strings: [
       "HTML5 and CSS3.",
       "Vanilla JavaScript.",
+      "Figma and Webflow",
       "Responsive Design.",
       "Git and GitHub.",
    ],
