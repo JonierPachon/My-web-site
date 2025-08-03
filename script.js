@@ -14,6 +14,9 @@ window.onscroll = () => {
    }
 };
 
+// Vanilla JavaScript.
+// JavaScript and Figma.
+
 // ABOUT SECTION
 
 // Typing Text Code
@@ -21,7 +24,7 @@ const typed = new Typed(".multiple-text", {
    strings: [
       "HTML5 and CSS3.",
       "Vanilla JavaScript.",
-      "Figma and Webflow",
+      "Figma Prototyping.",
       "Responsive Design.",
       "Git and GitHub.",
    ],
