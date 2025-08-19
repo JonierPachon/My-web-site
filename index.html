@@ -17,7 +17,14 @@
       <header>
          <a href="#home" class="logo">Jonier Pachon</a>
          <!-- icon -->
-         <div class="bx bx-menu" id="menu-icon"></div>
+         <div
+            class="bx bx-menu"
+            id="menu-icon"
+            role="button"
+            aria-label="toggle-navigation"
+            aria-expanded="false"
+            tabindex="0"
+         ></div>
 
          <ul class="navbar">
             <li><a href="#home">Home</a></li>
@@ -46,12 +53,18 @@
                work beautifully on any device.
             </p>
             <div class="social-media">
+               <!-- rel="noopener noreferrer" enhance security and privacy -->
                <a
                   href="https://www.linkedin.com/in/jonierpachon/"
                   target="_blank"
+                  rel="noopener noreferrer"
                   ><i class="bx bxl-linkedin"></i
                ></a>
-               <a href="https://github.com/jonierpachon" target="_blank"
+               <!-- rel="noopener noreferrer" enhance security and privacy -->
+               <a
+                  href="https://github.com/jonierpachon"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   ><i class="bx bxl-github"></i
                ></a>
             </div>
@@ -127,6 +140,7 @@
                         <a
                            class="button-row"
                            target="_blank"
+                           rel="noopener noreferrer"
                            href="https://delicate-muffin-733873.netlify.app/#home"
                            >Demo<i class="bx bxs-right-arrow"></i
                         ></a>
@@ -134,6 +148,7 @@
                         <a
                            class="button-row"
                            href="https://github.com/JonierPachon/VELTORA-Precision-in-Motion"
+                           rel="noopener noreferrer"
                            target="_blank"
                         >
                            GitHub
@@ -169,6 +184,7 @@
                         <a
                            class="button-row"
                            target="_blank"
+                           rel="noopener noreferrer"
                            href="https://helpful-dango-eebb80.netlify.app/"
                            >Demo<i class="bx bxs-right-arrow"></i
                         ></a>
@@ -176,6 +192,7 @@
                         <a
                            class="button-row"
                            href="https://github.com/JonierPachon/frontendmentor-extension-manager"
+                           rel="noopener noreferrer"
                            target="_blank"
                         >
                            GitHub
@@ -209,6 +226,7 @@
                         <a
                            class="button-row"
                            target="_blank"
+                           rel="noopener noreferrer"
                            href="https://bejewelled-tanuki-22670a.netlify.app/"
                            >Demo<i class="bx bxs-right-arrow"></i
                         ></a>
@@ -216,6 +234,7 @@
                         <a
                            class="button-row"
                            href="https://github.com/JonierPachon/Random-Joke-Generator"
+                           rel="noopener noreferrer"
                            target="_blank"
                         >
                            GitHub
@@ -283,10 +302,16 @@
       <!-- footer section code -->
       <footer class="footer">
          <div class="social">
-            <a href="https://www.linkedin.com/in/jonierpachon" target="_blank"
+            <a
+               href="https://www.linkedin.com/in/jonierpachon"
+               target="_blank"
+               rel="noopener noreferrer"
                ><i class="bx bxl-linkedin"></i
             ></a>
-            <a href="https://github.com/jonierpachon" target="_blank"
+            <a
+               href="https://github.com/jonierpachon"
+               target="_blank"
+               rel="noopener noreferrer"
                ><i class="bx bxl-github"></i
             ></a>
          </div>
@@ -294,9 +319,7 @@
          <p class="copyright">&copy; Jonier Pachon | All Rights Reserved</p>
       </footer>
       <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-      <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
       <script src="swiper-bundle.min.js"></script>
-      <script src="script.js"></script>
       <script
          type="text/javascript"
          src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
@@ -308,5 +331,6 @@
             });
          })();
       </script>
+      <script src="script.js"></script>
    </body>
 </html>
