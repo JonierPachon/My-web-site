@@ -9,8 +9,8 @@ A **responsive portfolio website** built with **HTML, CSS, and JavaScript**, des
 - Deployed on **Netlify** for fast and reliable hosting
 
 ## 📸 Demo
-<p align="center"><img src="https://github.com/JonierPachon/JonierPachon-web-portfolio/blob/main/phone1.png" alt="My Image" width="450" height="auto" ></p>
-<p align="center"><img src="https://github.com/JonierPachon/JonierPachon-web-portfolio/blob/main/pc1.png" alt="My Image" width="1000" height="auto" ></p>
+<p align="center"><img src="https://github.com/JonierPachon/My-web-site/blob/main/assets/README/phone1.png" alt="My Image" width="450" height="auto" ></p>
+<p align="center"><img src="https://github.com/JonierPachon/My-web-site/blob/main/assets/README/pc1.png" alt="My Image" width="1000" height="auto" ></p>
 
 ## ⚙️ Technologies Used
 - **HTML5** - semantic, accessible structure
